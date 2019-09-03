@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Monospace:pixelsize=12:antialias=true:autohint=true";
+static char *font = "Monospace:pixelsize=18:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -16,7 +16,7 @@ static int borderpx = 2;
  * 4: value of shell in /etc/passwd
  * 5: value of shell in config.h
  */
-static char *shell = "/bin/sh";
+static char *shell = "/bin/bash";
 char *utmp = NULL;
 char *stty_args = "stty raw pass8 nl -echo -iexten -cstopb 38400";
 
@@ -63,7 +63,7 @@ static unsigned int cursorthickness = 2;
 static int bellvolume = 0;
 
 /* default TERM value */
-char *termname = "screen-256color";
+char *termname = "xterm-256color";
 
 /*
  * spaces per tab
@@ -85,24 +85,24 @@ unsigned int tabspaces = 8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
+	"#000000",//"black",
+	"#AA0000",//"red3",
+	"#00AA00",//"green3",
+	"#AA5500",//"yellow3",
+	"#0000AA",//"blue2",
+	"#AA00AA",//"magenta3",
+	"#00AAAA",//"cyan3",
+	"#AAAAAA",//"gray90",
 
 	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
+	"#555555",//"gray50",
+	"#FF5555",//"red",
+	"#55FF55",//"green",
+	"#FFFF55",//"yellow",
+	"#5555FF",//"#5c5cff",
+	"#FF55FF",//"magenta",
+	"#55FFFF",//"cyan",
+	"#FFFFFF",//"white",
 
 	[255] = 0,
 
